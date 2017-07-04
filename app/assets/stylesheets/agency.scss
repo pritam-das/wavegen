@@ -79,6 +79,11 @@ h1, h2, h3, h4, h5, h6 {
 
 // Restyled Primary Buttons
 
+.contactspacing {
+text-align: center;
+
+}
+
 .btn-primary {
     @include button-variant(white, $theme-primary, $theme-primary);
     @include heading-font;
@@ -101,7 +106,8 @@ h1, h2, h3, h4, h5, h6 {
     border-color: transparent;
     .navbar-brand {
         color: $theme-primary;
-        @include script-font;
+        font: poiret-one;
+        &:focus,
         &:hover,
         &:focus,
         &:active,
@@ -117,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
         border-color: $theme-primary;
         @include heading-font;
         color: white;
-        font-size: 12px;
+        font-size: 10px;
         &:hover,
         &:focus {
             background-color: $theme-primary;
@@ -246,6 +252,7 @@ section {
         font-size: 17.5px;
         @include serif-font;
         text-transform: none;
+        line-height: 1.75;
         text-align: justify;
         // font-style: italic;
         font-weight: 400;
@@ -269,6 +276,7 @@ section {
 // Portfolio Section
 
 #portfolio {
+    display: none;
     .portfolio-item {
         margin: 0 0 15px;
         right: 0;
